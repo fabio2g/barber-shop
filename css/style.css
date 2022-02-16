@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Patua One';
+}
+
+header {
+    /* position: fixed; */
+    width: 100%;
+    background: rgba(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 72px;
+}
+
+#navegacao {
+    margin: 0 30px 0 160px;
+}
+
+#navegacao ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 925px;
+    height: 120px;
+}
+
+#navegacao li a {
+    display: block;
+    font-size: 14px;
+    line-height: 60px;
+    color: #fff;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#navegacao li a:hover {
+    color: #f1cd30;
+}
+
+.botao a {
+    background: #f1cd30;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.botao:hover {
+    transition: .5s;
+    opacity: 0.8;
+}
+
+#carrosel img {
+    width: 100%;
+    max-width: 2500px;
+    height: 453px;
+    max-height: 453px;
+    object-fit: cover;
+}
+
+#sobre {
+    width: 100%;
+    height: 120vh;
+    background: url(../img/bg-sobre2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 2500px;
+    height: 120vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#conteudo .principal {
+    max-width: 550px;
+    text-align: center;
+    background: transparent;
+    /* border: 1px solid red; */
+}
+
+#conteudo .principal h3 {
+    color: #dedede;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+#conteudo .principal p {
+    color: #dedede;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#conteudo .principal .botao {
+    margin-top: 60px;
+}
+
+/* Serviços */
+#servicos {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    font-family: 'Patua One';
+}
+
+#servicos .titulo {
+    margin-top: 320px;
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #444444;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#servicos .box-icones {
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.box-icones .icone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    margin: 50px 12px;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.box-icones .icone:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.icone div {
+    width: 105px;
+    background: #FECC01;
+    border-radius: 200px;
+    padding: 12px;
+}
+
+.small img {
+    width: fit-content;
+    padding: 6px;
+}
+
+.icone img {
+    width: 100%;
+    /* padding:px; */
+}
+
+.icone span {
+    font-weight: 600;
+    margin-top: 2em;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+/* Garatia */
+#garantia {
+    width: 100%;
+    max-width: 2500px;
+    height: 100%;
+    background: url(../img/bg-garantia.jpg) no-repeat left,
+        url(../img/bg-garantia-2.jpg) no-repeat right;
+    background-size: 58%, 42%;
+}
+
+#garantia #conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    color: #444444;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 90px 0;
+}
+
+.titulo span {
+    color: #F0CC30;
+}
+
+#servicos .box-icones,
+#conteudo .box-garantia-top,
+#conteudo .box-garantia-bottom,
+#box-conteudo-lazer .card-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo .box-garantia-top,
+#conteudo .box-garantia-bottom,
+#box-conteudo-lazer .card-items {
+    flex-wrap: wrap;
+}
+
+.box-garantia-top div,
+.box-garantia-bottom div {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 15px;
+    color: #dedede;
+    text-align: center;
+}
+
+.box-garantia-bottom div {
+    max-width: 570px;
+    margin-bottom: 70px;
+}
+
+.box-garantia-top h3,
+.box-garantia-bottom h3 {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 280px;
+    padding: 10px 0;
+    border: 3px solid #dedede;
+}
+
+.box-garantia-top p,
+.box-garantia-bottom p,
+.box-garantia-bottom div {
+    margin-top: 60px;
+}
+
+/* Lazer */
+#lazer {
+    width: 100%;
+    background: #fff;
+}
+
+#lazer #box-conteudo-lazer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#box-conteudo-lazer .card-items div {
+    width: 370px;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 90px;
+}
+
+.card-items div img {
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+    background: #c1c1c1;
+    object-fit: cover;
+}
+
+.card-items h3 {
+    font-size: 16px;
+    color: #444444;
+    margin: 25px 0;
+}
+
+.card-items p {
+    font-size: 15px;
+}
+
+/* Unidades  */
+#box-unidades {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    padding: 130px 0;
+}
+
+#box-unidades .botao a {
+    font-size: 17px;
+    padding: 18px 80px;
+}
+
+/* Franquia */
+#box-franquia {
+    background: #F1CD30;
+    padding: 90px 0;
+}
+
+#box-conteudo-franquia {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#box-conteudo-franquia h3 {
+    margin: auto;
+    font-size: 42px;
+    color: #444444;
+    width: 60%;
+}
+
+#box-conteudo-franquia p {
+    font-family: 'Patua One';
+    line-height: 21px;
+    color: #444444;
+    margin: 60px 0;
+    padding: 20px 10px;
+}
+
+#box-conteudo-franquia .botao a {
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    padding: 20px 58px;
+}
+
+/* Blog */
+#box-blog {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+}
+
+#box-card-noticias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+#box-card-noticias .card {
+    width: 350px;
+    height: 100%;
+    margin: 20px;
+    background: #f8f8ff54;
+    overflow: hidden;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: .55s;
+}
+
+#box-card-noticias .card:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+}
+
+.card h3 {
+    margin: 25px 10px;
+    font-size: 30px;
+    color: #444444;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.card span a {
+    display: block;
+    margin: 0 10px 20px;
+}
+
+/* Rodapé */
+#footer {
+    background: #111111;
+    color: #dedede;
+}
+
+#footer #box-rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    padding: 50px 30px 100px 30px;
+}
+
+#box-rodape .box-conteudo-rodape {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.box-conteudo-rodape .titulo-rodape {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.box-conteudo-rodape .conteudo {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+#box-rodape .box-aplicativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* border: 1px solid gold; */
+}
+
+.box-aplicativo span {
+    color: #dedede;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#footer .redes-sociais {
+    width: 100%;
+    border-top: 1px solid #444444;
+}
+
+#footer .redes-sociais .box-redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+#footer .redes-sociais .direitos {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+.box-redes-sociais .icones {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.box-redes-sociais .icones a {
+    color: #65666c;
+    font-size: 25px;
+}
+
+.box-redes-sociais .icones a:hover {
+    color: #dedede;
+}
