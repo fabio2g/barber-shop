@@ -1,2 +1,2 @@
-# beard.com
-Site barbearia Beard.com
+# barber shop
+Site barbearia barber shop
