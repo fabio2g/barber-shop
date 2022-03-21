@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@ a {
 }
 
 h3 {
-    font-family: 'Patua One';
+    font-family: "Patua One";
 }
 
 header {
@@ -56,19 +56,18 @@ header {
     color: #fff;
     padding: 0 20px;
     text-transform: uppercase;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 #navegacao li a:hover {
     color: #f1cd30;
 }
-@media(max-width: 1200px) {
-    
-    #logo img, #navegacao, header .botao {
+@media (max-width: 1200px) {
+    #logo img,
+    #navegacao,
+    header .botao {
         display: none;
     }
-   
-
 }
 
 .botao a {
@@ -99,19 +98,35 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    -webkit-mask-image: linear-gradient(to top, transparent 1%, rgb(99, 99, 99) 20%);
+    -webkit-mask-image: linear-gradient(
+        to top,
+        transparent 1%,
+        rgb(99, 99, 99) 20%
+    );
 }
 #carrosel img.selected {
     opacity: 1;
     transition: 0.5s;
 }
+@media (max-width: 920px) {
+    #carrosel {
+        /* margin-top: 20px; */
+        height: 400px;
+        /* max-height: 453px; */
+    }
+}
 
+/* Sobre */
 #sobre {
     width: 100%;
     height: 120vh;
     background: url(../img/bg-sobre2.jpg) no-repeat center;
     background-size: cover;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 1%, rgb(99, 99, 99) 20%);
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 1%,
+        rgb(99, 99, 99) 20%
+    );
 }
 
 #conteudo {
@@ -151,13 +166,18 @@ header {
 #conteudo .principal .botao {
     margin-top: 60px;
 }
+@media (max-width: 920px) {
+    #conteudo .principal p {
+        padding: 8px 25px;
+    }
+}
 
 /* Serviços */
 #servicos {
     width: 100%;
     background: #fff;
     overflow: hidden;
-    font-family: 'Patua One';
+    font-family: "Patua One";
 }
 
 #servicos .titulo {
@@ -196,7 +216,7 @@ header {
 
 .icone div {
     width: 105px;
-    background: #FECC01;
+    background: #fecc01;
     border-radius: 200px;
     padding: 12px;
 }
@@ -216,6 +236,15 @@ header {
     margin-top: 2em;
     text-transform: uppercase;
     color: #444444;
+}
+
+@media (max-width: 920px) {
+    #servicos .titulo h3 {
+        font-size: 35px;
+    }
+    .icone div {
+        transform: scale(1.2);
+    }
 }
 
 /* Garatia */
@@ -245,7 +274,7 @@ header {
 }
 
 .titulo span {
-    color: #F0CC30;
+    color: #f0cc30;
 }
 
 #servicos .box-icones,
@@ -292,12 +321,12 @@ header {
 .box-garantia-bottom div {
     margin-top: 60px;
 }
-@media(max-width: 900px) {
-    .box-garantia-top div, .box-garantia-bottom div {
+@media (max-width: 900px) {
+    .box-garantia-top div,
+    .box-garantia-bottom div {
         /* border: 1px solid red; */
         margin-bottom: 50px;
     }
-
 }
 
 /* Lazer */
@@ -338,7 +367,7 @@ header {
     font-size: 15px;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     #garantia {
         background: none;
     }
@@ -364,7 +393,7 @@ header {
 
 /* Franquia */
 #box-franquia {
-    background: #F1CD30;
+    background: #f1cd30;
     padding: 90px 0;
 }
 
@@ -382,7 +411,7 @@ header {
 }
 
 #box-conteudo-franquia p {
-    font-family: 'Patua One';
+    font-family: "Patua One";
     line-height: 21px;
     color: #444444;
     margin: 60px 0;
@@ -395,7 +424,7 @@ header {
     font-size: 17px;
     padding: 20px 58px;
 }
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     #box-conteudo-franquia h3 {
         font-size: 32px;
         width: 90%;
@@ -436,7 +465,7 @@ header {
     overflow: hidden;
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
-    transition: .55s;
+    transition: 0.55s;
 }
 
 #box-card-noticias .card:hover {
@@ -508,15 +537,15 @@ header {
     /* border: 1px solid gold; */
 }
 
-@media(max-width: 920px) {
+@media (max-width: 920px) {
     #footer #box-rodape {
         justify-content: center;
         text-align: center;
     }
-    .box-aplicativo span, .box-aplicativo a {
+    .box-aplicativo span,
+    .box-aplicativo a {
         display: none;
     }
-
 }
 .box-aplicativo span {
     color: #dedede;
@@ -559,7 +588,8 @@ header {
 .box-redes-sociais .icones a:hover {
     color: #dedede;
 }
-@media(max-width: 920px) {
+
+@media (max-width: 920px) {
     #footer .redes-sociais .box-redes-sociais {
         justify-content: center;
         flex-direction: column-reverse;

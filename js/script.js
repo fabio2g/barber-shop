@@ -1,27 +1,23 @@
-let time = 5000
-let currentImageIndex = 0
-let images = document.querySelectorAll("#carrosel img")
-console.log(images)
-let max = images.length
+let time = 5000;
+let currentImageIndex = 0;
+let images = document.querySelectorAll("#carrosel img");
+let max = images.length;
 
 function nextImage() {
+    images[currentImageIndex].classList.remove("selected");
 
-  images[currentImageIndex].classList.remove("selected")
+    currentImageIndex++;
 
-  currentImageIndex++
+    if (currentImageIndex >= max) {
+        currentImageIndex = 0;
+    }
 
-  if(currentImageIndex >= max) {
-    currentImageIndex = 0
-  }
-
-  images[currentImageIndex].classList.add("selected")
-
+    images[currentImageIndex].classList.add("selected");
 }
 function start() {
-  setInterval(() => {
-    nextImage()
-  }, time)
-
+    setInterval(() => {
+        nextImage();
+    }, time);
 }
 
-window.addEventListener("load", start)
+window.addEventListener("load", start);
